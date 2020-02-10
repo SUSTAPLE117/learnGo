@@ -61,7 +61,7 @@ func ConvertToArabic(roman string) int {
 				total += value
 				i++
 			} else {
-				total++
+				total += allRomanNumerals.ValueOf(symbol)
 			}
 		} else {
 			total += allRomanNumerals.ValueOf(symbol)
