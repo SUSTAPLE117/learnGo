@@ -8,8 +8,9 @@ func TestRomanNumerals(t *testing.T) {
 		Arabic      int
 		Want        string
 	}{
-		{"1 get converted to I", 1, "I"},
-		{"2 get converted to II", 2, "II"},
+		{"1 gets converted to I", 1, "I"},
+		{"2 gets converted to II", 2, "II"},
+		{"3 gets converted to II", 3, "III"},
 	}
 
 	for _, test := range cases {
