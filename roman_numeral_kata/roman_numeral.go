@@ -10,6 +10,10 @@ func ConvertToRoman(arabic int) string {
 			result.WriteString("IV")
 			break
 		}
+		if i == 5 {
+			result.WriteString("V")
+			break
+		}
 		result.WriteString("I")
 	}
 
