@@ -53,7 +53,7 @@ func ConvertToArabic(roman string) int {
 	for i := 0; i < len(roman); i++ {
 		symbol := roman[i]
 
-		if i+1 < len(roman) && symbol == 'I' {
+		if couldBeSubtractive(i, roman, symbol) {
 			nextSymbol := roman[i+1]
 
 			potentialNumber := string([]byte{symbol, nextSymbol})
@@ -71,4 +71,8 @@ func ConvertToArabic(roman string) int {
 		}
 	}
 	return total
+}
+
+func couldBeSubtractive(index int, roman string, currentSymbol uint8) bool {
+	return index+1 < len(roman) && currentSymbol == 'I'
 }
