@@ -1,7 +1,7 @@
 package clockface_test
 
 import (
-	"github.com/gypsydave5/learn-go-with-tests/math/v1/clockface"
+	"github.com/gypsydave5/learn-go-with-tests/math/v5/clockface"
 	"testing"
 	"time"
 )
